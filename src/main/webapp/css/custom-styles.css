@@ -1,0 +1,259 @@
+/************************************************
+	Font family
+ ************************************************/
+ @font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'source_sans_problack';
+    src: url('../fonts/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_problack_italic';
+    src: url('../fonts/sourcesanspro-blackitalic-webfont.eot');
+    src: url('../fonts/sourcesanspro-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.svg#source_sans_problack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/************************************************
+	Global styles starts here
+ ************************************************/
+body{background: #e6e6e6; color: #888888; font-size: 14px; line-height: 24px;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{padding-bottom: 25px; margin: 0;}
+.last{padding-bottom: 0;}
+.ruler{border-bottom: 1px solid #c9c9c9;}
+.img-spacing{margin-right: 30px; margin-bottom: 30px;}
+
+/************************************************
+	Menu styles starts here
+ ************************************************/
+.header-wrapper{overflow: hidden; text-align: center; background: #fff; padding-top: 60px; padding-bottom: 40px;}
+.site-name{display: inline-block;}
+.site-name h1{margin: 0; font-size: 44px; color: #34b091; font-family: 'source_sans_probold'; text-transform: uppercase; letter-spacing: 2px;}
+.site-name h2{font-size: 18px; line-height: 24px; color: #cac8c8; font-family: 'source_sans_prolight';}
+.menu{text-align: center; background: #34b091; height: 52px;}
+.navbar{display: inline-block; margin-bottom: 0;}
+
+.navbar-nav > li > a{color: #fff; font-size: 16px; background-image: none; border: none; font-family: 'source_sans_probold'; text-transform: uppercase; padding: 15px 0px; padding-right: 40px;}
+.navbar-nav > li > a:hover{color: #888888; background: none;}
+
+.mini-menu{display: none;}
+    .mini-menu .selectnav{display: none; width: 100%;background: #3b3e4a;font-weight: 600;padding: 10px;height: 42px; color: #fff; border-radius: 5px; cursor: pointer; outline: 0; border:none !important;}
+    .selectnav select{appearance: none; border:none !important;}
+    .mini-menu label {position:relative; width: 100%;}
+    .mini-menu label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#fff;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:14px; top:14px;
+    padding:0 0 2px;
+
+    position:absolute;
+    pointer-events:none;
+    }
+    .mini-menu label:before {
+    content:'';
+    right:6px; top:10px;
+    width: 25px; height: 25px;
+    background:#3b3e4a;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+    }
+
+
+.banner{}
+.banner .carousel-caption{top: 25%;}
+.banner .carousel-caption h1{margin: 0; font-size: 60px;font-family: 'source_sans_probold'; color: #fff; letter-spacing: 5px; text-transform: uppercase; padding-bottom: 20px;}
+.banner .carousel-caption h2{font-size: 28px; line-height: 36px;font-family: 'source_sans_prolight'; color: #fff; letter-spacing: 3px; padding-bottom: 20px;}
+.banner .carousel-caption .btn{color: #fff; font-size: 22px; line-height: 28px; font-family: 'source_sans_problack'; text-transform: uppercase; padding: 10px 25px; background: #34b091; border-radius: 40px; box-shadow: 0 3px 2px 0px #4a4c54; }
+.banner .carousel-caption .btn:hover{color: #34b091; background: #fff; transition:all 1s;}
+.banner .carousel-control {top: 45%; width: 40px; height: 40px; line-height: 42px; font-size: 30px; background: #34b091; 
+                            border-radius: 50px; bottom: 42%; opacity: 0.8;}
+.banner .carousel-control:hover{background: #3b3e4a;}                            
+.banner .carousel-control.right{right: 10%;}
+.banner .carousel-control.left{left: 10%;}
+
+    .banner .carousel-caption h1{ opacity: 0;}
+    .banner .carousel-caption h2{ opacity: 0;}
+    .banner .carousel-caption .btn{opacity: 0;}
+    .banner .carousel-inner:hover img{-webkit-filter: blur(5px); transition:all 5s; }
+    .banner .carousel-inner:hover h1{ transition:all 1s; opacity: 0.9 !important;  }
+    .banner .carousel-inner:hover h2{ transition:all 1s; opacity: 0.9 !important;  }
+    .banner .carousel-inner:hover .btn{ transition:all 1s; opacity: 0.9 !important;  }
+
+/************************************************
+	generic styles starts here
+ ************************************************/
+.featured-block{padding:55px 0; overflow: hidden;}
+.featured-block .block{}
+.featured-block .block .thumbnail{box-shadow: 0 3px 3px 0 #e0e0e0;}
+.featured-block .caption{padding: 25px 15px;}
+.featured-block .caption h1{font-size: 18px; line-height: 24px;color: #34b091; text-transform: uppercase;font-family: 'source_sans_probold';  padding-bottom: 10px; letter-spacing: 1px;}
+.featured-block .caption p{font-size: 14px; line-height: 24px; color: #888888;font-family: 'source_sans_proregular';}
+.featured-block .caption .btn{color: #fff; background: #34b091; font-size: 12px; font-family: 'source_sans_problack'; border-radius: 30px; text-transform: uppercase; line-height: 13px;}
+.featured-block .caption .btn:hover{color: #fff; background: #454855; transition:all 1s;}
+
+
+.featured-item{padding:55px 0;overflow: hidden;}
+.featured-item .block{overflow: hidden;}
+.featured-item .block ul{margin: 0;overflow: hidden; padding: 0;}
+.featured-item .block ul li{list-style: none;float: left;}
+.featured-item .block .block-title{padding-bottom: 30px;}
+.featured-item .block .block-title h1{font-size: 28px; line-height: 32px; color: #454855; text-transform: uppercase;font-family: 'source_sans_probold'; letter-spacing: 1px;}
+.featured-item .block .block-title h2{font-size: 18px; line-height: 24px; color: #454855; font-family: 'source_sans_prolight';}
+
+
+.user-info{overflow: hidden; float: left;}
+.user-info .icon{margin-right: 30px; background: #34b091; color: #fff; border-radius: 10px;
+                font-size: 25px; padding: 22px; line-height: 25px; width: 70px; height: 70px; float: left;}
+.user-info .icon:hover{background: #454855; color: #fff; transition:all 1s;}
+.user-info h1{font-size: 18px; line-height: 24px; color: #3b3e4a;font-family: 'source_sans_probold'; padding-bottom: 10px; text-transform: uppercase;}
+.user-info p{}
+
+.block .panel-default > .panel-heading {background: #fff;color: #34b091; font-size: 16px; padding: 0;}
+.block .panel-default > .panel-heading .panel-title{line-height: 40px;}
+.block .panel-default > .panel-heading .panel-title > a:hover{text-decoration: none;}
+.block .panel-default > .panel-collapse{background: #f0f0f0;color: #989898; font-size: 14px;}
+.block .panel-default > .panel-collapse .panel-body {padding: 20px 15px;}
+.block .panel-group .panel + .panel {
+margin-top: 10px;
+}
+
+.accordion-caret .accordion-toggle:hover {
+        text-decoration: none;
+    
+    }
+    
+.accordion-caret .accordion-toggle:before {
+    
+    vertical-align: -1px;
+    
+    border-bottom: 0;
+    line-height: 0;
+}
+.accordion-caret .accordion-toggle:not(.collapsed):before {
+    
+    float: right;
+    color:#000;
+    display:inline-block;
+    content: url(../img/minus-sign.png);
+
+    
+}
+.accordion-caret .accordion-toggle.collapsed:before {
+       
+    color:#fff;float: right;
+      content: url(../img/plus-sign.png);
+    
+}
+.panel-title .accordion-toggle.collapsed{padding-left: 10px;}
+.panel-title .accordion-toggle:not(.collapsed){background: #3b3e4a !important; display: block; padding-left: 10px; color: #fff;}
+
+
+.featured-content{overflow: hidden; padding: 55px 0;}
+.featured-content .block{}
+.featured-content .block img{float: left;}
+.featured-content .block h1{font-size: 18px; line-height: 24px; color: #454855; padding-bottom: 15px;font-family: 'source_sans_probold'; text-transform: uppercase;}
+.featured-content .block .btn{color: #fff; background: #34b091; font-size: 12px; font-family: 'source_sans_problack'; border-radius: 30px; text-transform: uppercase; line-height: 13px;}
+
+.featured-content .block .btn:hover{color: #fff; background: #454855; transition:all 1s;}
+/************************************************
+	sidebar styles starts here
+ ************************************************/
+
+/************************************************
+	Footer styles starts here
+ ************************************************/
+.footer-wrapper{background: #3b3e4a;}
+.site-content{padding: 55px 0; overflow: hidden;}
+.site-content .block h1{font-size: 18px; line-height: 24px; color: #fff; text-transform: uppercase; font-family: 'source_sans_probold'; padding-bottom: 10px;}
+.site-content .block ul{margin: 0; padding: 0;}
+.site-content .block ul li{list-style: none; line-height: 28px;}
+.site-content .block ul li a{font-size: 14px; color: #cbcbcb;font-family: 'source_sans_proregular'; border-bottom: 1px solid #83858b;} 
+.site-content .block ul li a:hover{text-decoration: none; color: #fff;}
+.site-content .block .input-group {margin-top: 10px;}
+.site-content .block .input-group-btn .btn{border-radius: 0 20px 20px 0; background: #34b091; color: #fff; font-family: 'source_sans_problack'; text-transform: uppercase; border: none; padding: 6px 5px; font-size: 12px; line-height: 23px;}
+.site-content .block .input-group-btn .btn:hover{background: #454855; color: #34b091; transition:all 1s;}
+.input-group .form-control {border-radius: 19px;background: #454855; border: none;}
+.site-content .block .social li a{text-decoration: none; border-bottom: 0;}
+.site-content .block .social{margin-top: 8px;}
+.social [class^="fw-icon-"]{font-size: 18px; width: 40px; height: 40px; 
+                            line-height: 14px; padding:14px; background: #34b091; color: #fff; border-radius: 50%; display: inline-block; margin-right: 5px;}
+.social [class^="fw-icon-"]:hover{background: #454855; color: #34b091; transition:all 1s;}
+.social li{display: inline-block;}
+
+.copy-rights{color: #34b091;font-family: 'source_sans_proregular'; background: #454855; padding: 35px 0;}
+.copy-rights a{color: #34b091;font-size: 14px; font-family: 'source_sans_proregular'; text-decoration: none;}
+.copy-rights a:hover{color: #fff;}
+
+/************************************************
+    Responsive Tweaks starts here
+ ************************************************/
