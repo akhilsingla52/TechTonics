@@ -1,6 +1,8 @@
-<jsp:include page="session_user.jsp"/>
+<jsp:include page="session_hr.jsp"/>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -34,10 +36,34 @@
   </head>
 
   <body>
-  	<jsp:include page="nav_user.jsp"/>
+  				<jsp:include page="nav_hr.jsp"/>
+  				<br/>
+  				<h2 class="success" style="text-align:center;width:100%">${info}</h2>
+  				<br/>
   				
-    <jsp:include page="main.jsp"/>
-    
+  				<div class="container">
+	  				<button class="btn btn-primary pull-right" type="button" onclick="window.location.href='EventServlet'">Back</button>
+	  				<br/><br/>
+	  				<table class="table table-striped">
+					    <thead>
+					      <tr>
+					        <th class="success">Employee ID</th>
+					        <th class="success">Employee Name</th>
+					        <th class="success">Email ID</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    <c:forEach items="${list}" var="u">	
+					      <tr>
+					        <td>${u.emp_id}</td>
+					        <td>${u.name}</td>
+					        <td>${u.email_id}</td>
+					     </tr>
+					    </c:forEach>
+					   </tbody>
+	  				</table>
+  				</div>
+      			
     
   </body>
 </html>

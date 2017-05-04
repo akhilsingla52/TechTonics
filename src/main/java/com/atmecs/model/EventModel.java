@@ -42,7 +42,7 @@ public class EventModel {
 					applied.add(rs.getInt(1));
 				}
 				
-				PreparedStatement statement=connection.prepareStatement("select * from EVENTS");
+				PreparedStatement statement=connection.prepareStatement("select * from EVENTS order by START_DATE desc");
 				rs = statement.executeQuery();
 				
 				while(rs.next())
@@ -62,7 +62,7 @@ public class EventModel {
 				}
 				return al;
 			} else {			
-				PreparedStatement statement=connection.prepareStatement("select * from EVENTS");
+				PreparedStatement statement=connection.prepareStatement("select * from EVENTS order by START_DATE desc");
 				rs = statement.executeQuery();
 				
 				while(rs.next())

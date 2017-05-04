@@ -13,8 +13,10 @@
 				 <li><a href="home_hr.jsp">Home</a></li>
 				 <li><a href="EventServlet">Events</a></li>
               <li><a href="LogoutServlet">Logout</a></li>
-              
+              <li><a><%= session.getAttribute("email") %></a></li>
             </ul>
+            
+              
           </div><!--/.navbar-collapse -->
         </div>
       </div>

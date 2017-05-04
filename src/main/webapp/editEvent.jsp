@@ -1,4 +1,4 @@
-
+<jsp:include page="session_hr.jsp"/>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,8 +36,8 @@
 		   		<input type="text" class="text" name="name" placeholder="Event Name" value="${e.name}">
 		   		<input type="text" class="text" name="type" placeholder="Event Type" value="${e.type}">
 		   		<input type="text" class="text" name="description" placeholder="Event Description" value="${e.description}">
-		   		<input type="text" class="text" name="startDate" placeholder="Start Date" value="${e.start_date}">
-		   		<input type="text" class="text" name="endDate" placeholder="End Date" value="${e.end_date}">
+		   		<input type="date" class="text" name="startDate" placeholder="Start Date" value="${e.start_date}">
+		   		<input type="date" class="text" name="endDate" placeholder="End Date" value="${e.end_date}">
 		   		<input type="text" class="text" name="duration" placeholder="Duration" value="${e.duration}">
 		   		<input type="text" class="text" name="presenter" placeholder="Presenter" value="${e.presenter}">
 		   		<div class="clear"></div>

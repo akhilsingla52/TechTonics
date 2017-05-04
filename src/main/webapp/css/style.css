@@ -63,10 +63,10 @@ body{
 	border-right: none;
 	border-top: none;
 }
-input[type="text"]:hover,input[type="Password"]:hover,input[type="email"]:hover,input[type="number"]:hover,#active {
+input[type="text"]:hover,input[type="Password"]:hover,input[type="email"]:hover,input[type="number"]:hover,input[type="date"]:hover ,#active {
 	border-left:6px solid#40A46F;
 }
-.lable-2 input[type="text"],input[type="email"],input[type="Password"],input[type="number"] { 
+.lable-2 input[type="text"],input[type="email"],input[type="Password"],input[type="number"] ,input[type="date"] { 
 	padding: 14px;
 	width: 100%;
 	font-size: 1em;
@@ -88,6 +88,13 @@ input[type="text"]:hover,input[type="Password"]:hover,input[type="email"]:hover,
 	border-bottom: none;
 	border-right: none;
 	border-top: none;
+}
+input[type="text"]::before,input[type="email"]::before,input[type="Password"]::before,input[type="number"]::before ,input[type="date"]::before{
+    content: attr(placeholder) ": ";
+}
+
+input[type="text"]::after,input[type="email"]::after,input[type="Password"]::after,input[type="number"]::after ,input[type="date"]::after{
+    content: "";
 }
 .submit{
 	padding:5px 4px;

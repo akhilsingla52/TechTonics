@@ -29,7 +29,7 @@ public class ListEventServlet extends HttpServlet {
 			request.setAttribute("list", al);
 		
 		
-		request.getRequestDispatcher("event_register.jsp").forward(request, response);
+		request.getRequestDispatcher("event_user_list.jsp").forward(request, response);
 	}
 
 }

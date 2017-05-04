@@ -1,3 +1,5 @@
+<jsp:include page="session_hr.jsp"/>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
@@ -40,7 +42,7 @@
   				<h2 class="success" style="text-align:center;width:100%">${info}</h2>
   				<br/>
   				
-  				<div class="container">
+  				<div style="padding:0px 100px;">
 	  				<button class="btn btn-primary pull-right" type="button" onclick="window.location.href='addEvent.jsp'">Add Event</button>
 	  				<br/><br/>
 	  				<table class="table table-striped">
